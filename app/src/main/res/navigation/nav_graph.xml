@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.evaluation.fragment.main.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="mSymbol"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.evaluation.fragment.detail.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="mSymbol"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailFragment_to_mainFragment2"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+
+</navigation>

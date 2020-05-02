@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bitfinex</string>
+
+    <string name="bid">BID</string>
+    <string name="ask">ASK</string>
+    <string name="avg">AVG</string>
+</resources>
